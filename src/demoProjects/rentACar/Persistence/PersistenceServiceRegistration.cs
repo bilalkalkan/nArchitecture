@@ -17,6 +17,7 @@ namespace Persistence
                     configuration.GetConnectionString("RentACarCampConnectionString")));
             //IoC
             services.AddScoped<IBrandRepository, BrandRepository>();
+            services.AddScoped<IModelRepository, ModelRepository>();
 
             return services;
         }

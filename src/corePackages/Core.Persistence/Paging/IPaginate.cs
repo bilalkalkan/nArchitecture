@@ -8,6 +8,7 @@ public interface IPaginate<T>
     int Count { get; }
     int Pages { get; }
     IList<T> Items { get; }
+
     bool HasPrevious { get; }
     bool HasNext { get; }
 }
